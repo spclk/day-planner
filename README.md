@@ -9,7 +9,7 @@ This is a simple calendar application that allows a user to save events for each
 ## Application Look
 
 
-![day planner demo](.Day-Planner.png)
+![day planner demo](./Day-Planner.png)
 
 
 ## Try it yourself at:
