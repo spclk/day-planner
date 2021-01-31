@@ -1,10 +1,14 @@
+// Moment.js current day information added
+
 var today = moment().format("dddd, MMMM Do YYYY");
 var currentTime = document.querySelector("#currentDay");
 currentTime.textContent = today;
 
+// All "Save" buttons are stored into a variable
 
 var saveButton = $(".btn")
 
+// This function saves input value into local storage
 
 saveButton.on("click", function(event){
     var clickedButton = $(event.target).attr("id");
@@ -13,6 +17,7 @@ saveButton.on("click", function(event){
     localStorage.setItem(clickedButton, siblingTextArea)
 });
 
+// Values entered are retrived from local storage
 
 $("#9am-input").val(localStorage.getItem("9am"));
 $("#10am-input").val(localStorage.getItem("10am"));
